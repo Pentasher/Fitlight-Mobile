@@ -133,3 +133,10 @@ ul.fitlight-main-menu {
 	text-align: center; 
 	max-width:100%; 
 }
+.logos img{
+	width: 100%;
+}
+.sixth_row{
+	background-image: url(../images/man-touch.jpg);
+    background-size: 100%;
+}
