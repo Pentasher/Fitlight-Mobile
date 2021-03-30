@@ -139,3 +139,17 @@ ul.fitlight-main-menu {
 .second_row_content h1{
 	font-weight: 900 !important;
 }
+.slick_slider{
+	width: 100%;
+}
+.second_row{
+	background-image: url(../images/man.jpg); 
+	background-size: 160%;  
+	text-align: center; 
+	max-width:100%; 
+	height: 374px; 
+	background-repeat: no-repeat;
+}
+.fourth_row{
+	background-color: #fff;
+}
