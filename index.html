@@ -1,49 +1,69 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+    Cache-Control:public;>
 <html lang="en">
 <head>
+    <meta http-equiv="Cache-control" content="public">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="canonical" href="https://www.fitlighttraining.com/" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/2ea19648f7.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Fitlight</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 </head>
+
 <body>
+    <span class="dark_background_overlay"></span>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video id="theVideo" controls="" controlslist="nodownload" autoplay="">
+                            <source
+                                src="https://www.fitlighttraining.com/wp-content/uploads/2020/05/Manifesto_16-9-Format-1.mp4"
+                                type="video/mp4">
+                        </video>
+                        <!-- iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                                        allow="autoplay"></!-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
-        <script>
-            $(document).ready(function(){
-                $("#fitlight-hamburger-btn").click(function(){
-                    $(".hambuger-menu-content").addClass("hambuger-menu-content-isActive");
-                });
-                $(".fitlight-hamburger-close").click(function(){
-                    $(".hambuger-menu-content").removeClass("hambuger-menu-content-isActive");
-                });
-            });
-        </script>
         <section id="fitlight-mobile-header">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex align-items-center">
-                        <div class="fitlight-hamburger">
-                            <i class="fas fa-lg fa-bars" id="fitlight-hamburger-btn"></i>
+                        <div class="fitlight-hamburger" id="fitlight-hamburger-btn">
+                            <svg viewBox="0 0 100 80" width="30" height="40" fill="white">
+                                <rect width="100" height="15"></rect>
+                                <rect y="30" width="100" height="15"></rect>
+                                <rect y="60" width="100" height="15"></rect>
+                            </svg>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col d-flex align-items-center justify-content-center">
                         <div class="fitlight-logo">
                             <img src="./images/logo.png" alt="">
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center justify-content-center">
+                    <div class="col d-flex align-items-center justify-content-right">
                         <div class="fitlight-buy-button">
                             <a href="store.fitlighttraining.com">BUY</a>
                         </div>
                     </div>
-                  </div>
-              </div>
+                </div>
+            </div>
         </section>
         <div class="hambuger-menu-content">
             <div class="container">
@@ -63,34 +83,318 @@
                     <li><a href="https://www.fitlighttraining.com/wp-login.php?action=login">LOGIN</a></li>
                 </ul>
                 <div class="fitlight-hamburger-close">
-                    <i class="fas fa-2x fa-times" id="fitlight-hamburger-btn"></i>
+                    <img height="30" src="./images/cross.svg" alt="">
                 </div>
             </div>
         </div>
     </header>
+
     <div class="container text-center color-white section-one" id="background-image">
         <span class="dark_background_overlay"></span>
         <div>
             <div style="position: fixed; z-index: -99; width: 100%; height: 100%;">
                 <iframe src="https://www.youtube.com/embed/5BFTEiJQt9Q?vq=hd1080&autoplay=1&modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&theme=light&controls=0" width="800" height="443" frameborder="0"></iframe>
-            </div>
-            <div class="section-one-main-content">
-                <div class="section-one-title">
-                    <h3>FITLIGHT®</h3>
-                </div>
-                <div class="section-one-description">
-                    <p>The World's Most Advanced Wireless Light Training System.</p>
-                </div>
-                <div class="section-one-buttons d-block">
-                    <div class="row justify-content-center">
-                        <a href="#">BUY NOW ></a>
+
+    <div class="hero-background">
+        <div id="background-image">
+            <div class="container text-center color-white section-one">
+                <div class="section-one-main-content">
+                    <div class="section-one-title">
+                        <h3>FITLIGHT®</h3>
                     </div>
-                    <div class="row justify-content-center">
-                        <a href="#">LEARN MORE ></a>
+                    <div class="section-one-description">
+                        <p>The World's Most Advanced Wireless Light Training System.</p>
+                    </div>
+                    <div class="section-one-buttons d-block">
+                        <div class="row justify-content-center">
+                            <a href="#">BUY NOW ></a>
+                        </div>
+                        <div class="row justify-content-center">
+                            <a href="#">LEARN MORE ></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="d-flex text-center second_row">
+        <div class="container content">
+            
+            <h1 class="color-white">Revolutionizing</h1>
+            <h1 class="color-white">How You Train</h1>
+            <p class="color-white"><strong> The world’s most advanced wireless light training. FITLIGHT® uses patented,
+                    industry-leading wireless light sensors and custom developed software to challenge users with
+                    engaging, powerful training tasks.</strong></p>
+            <button type="button" class="btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk"
+                data-target="#myModal">
+                <img src="./images/ar-right.svg" alt="" class="arrow-right"> WATCH THE FILM
+            </button>
+        </div>
+    </div>
+    <div class="d-flex text-center third_row">
+        <div class="container content">
+            <h1 class="color-white">Neurocognitive Training for</h1>
+            <h1 class="color-white">the Body and Brain</h1>
+            <p class="color-white"><strong> By training what your eyes see to how your brain processes to how your body
+                    reacts, FITLIGHT® products are designed to improve all attributes of human performance. Our products
+                    help athletes, training, healthcare patients and professionals, tactical forces and those interested
+                    in peak human performance improve reaction time, increase mental accuracy and enhance sensory
+                    processing.</strong></p>
+        </div>
+    </div>
+    <div class="fourth_row">
+        <div class="container">
+            <div class="quote_img text-center">
+                <img src="https://www.fitlighttraining.com/wp-content/uploads/2020/05/b2-1.png" alt="">
+
+            </div>
+            <div class="slick_slider text-center">
+                <div class="content1">
+                    <h3>The FITLIGHT Training System has been an instrumental tool in taking my athletes game to the next level! There’s
+                        no other system or device on the market that allows athletes to compete in such an interactive way, which
+                        creates such excitement and fun for any age group! This has truly separated me from all other trainers on the
+                        market and has allowed me to take my business to the top!</h3>
+                    <p><strong>SHEA PIERRE</strong></p>
+                </div>
+                <div class="content5 ">
+                    <h3>The FITLIGHT Trainer™ has completely revolutionized my ability to enhance cognitive functioning and be able to
+                        develop a completely new brain-body training program using their cutting-edge technology.</h3>
+                    <p><strong>ACCELERATE BASKETBALL</strong></p>
+                </div>
+                <div class="content3 ">
+                    <h3>Working on my rehab with the FITLIGHT Trainer™, it is now an integral part of my training and I totally
+                        recommend it to anyone wanting to be at the top.</h3>
+                    <p><strong>MATT GILKS, GOALKEEPER FOR THE RANGERS AND THE SCOTLAND NATIONAL TEAM</strong></p>
+                </div>
+                <div class="content2">
+                    <h3>The FITLIGHT Trainer™ system is a very versatile unit that is easy to use and can be configured to meet our
+                        every need and more.</h3>
+                    <p><strong> JONATHAN LEE, STRENGTH AND CONDITIONING COACH FOR THE NBA TORONTO RAPTORS</strong></p>
+                </div>
+                <div class="content2">
+                    <h3>The FITLIGHT Trainer™ system is a very versatile unit that is easy to use and can be configured to meet our
+                        every need and more.</h3>
+                    <p><strong> JONATHAN LEE, STRENGTH AND CONDITIONING COACH FOR THE NBA TORONTO RAPTORS</strong></p>
+                </div>
+                <div class="content4 ">
+                        <h3>I have no hesitation in recommending the FITLIGHT </h3>
+                        <p><strong>NICKY BUTT, FORMER HEAD OF ACADEMY, MANCHESTER UNITED</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fifth_row position-relative">
+        <div class="logos">
+            <img src="./images/logos.jpg" alt="">
+        </div>
+    </div>
+    <div class="sixth_row d-flex">
+        <div class="container content">
+            <div class="text-center color-white section-one">
+                <div class="section-one-main-content">
+                    <div class="section-one-title p-0">
+                        <h3>FITLIGHT Trainer™</h3>
+                    </div>
+                    <div class="">
+                        <p>The world’s most advanced wireless light training system. The FITLIGHT is a unique wireless reaction training system comprised of LED lights deactivated by motion or touch controlled with our app.</p>
+                    </div>
+                    <div class="section-one-buttons d-block">
+                        <div class="row justify-content-center">
+                            <a href="https://www.fitlighttraining.com/trainer/"> Learn More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seventh_row d-flex">
+        <div class="container content">
+            <div class="text-center color-white section-one">
+                <div class="section-one-main-content">
+                    <div class="section-one-title p-0">
+                        <h3>Customized Solutions</h3>
+                    </div>
+                    <div class="">
+                        <p>FITLIGHT® has worked with some of the biggest brands in the world to create engaging, unique and memorable branding experiences. We work with these brands to create custom experiential pieces using state-of-the-art technologies, which includes our industry-leading proximity and impact sensing LED lights. With our ability to develop custom training interfaces, we continuously deliver powerful and meaningful brand experiences.</p>
+                    </div>
+                    <div class="section-one-buttons d-block">
+                        <div class="row justify-content-center">
+                            <a href="https://www.fitlighttraining.com/customized-solutions/"> Learn More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="eigth_row d-flex">
+        <div class="container content">
+            <div class="text-center color-white section-one">
+                <div class="section-one-main-content">
+                    <div class="section-one-title p-0">
+                        <h3>FITLIGHT® Accessories</h3>
+                    </div>
+                    <div class="clearing">
+                        <p>Outstanding accessories, designed to enhance your training experience with FITLIGHT®. Take a look at some of our cutting edge, must-have accessories.</p>
+                    </div>
+                    <div class="section-one-buttons d-block">
+                        <div class="row justify-content-center">
+                            <a href="https://www.fitlighttraining.com/accessories/">Shop for Accessories></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ninth_row d-flex text-center p-5">
+        <div class="container">
+            <div class="perks">
+                <img src="./images/stickman.jpg" alt="">
+                <div class="description">
+                    <h4><strong>TRAIN ANYWHERE</strong></h4>
+                    <p>The versatile and adaptable system allows for training nearly anywhere, with a waterproof design, 50-meter range and lights that are visible in nearly any lighting condition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ninth_row d-flex text-center p-5">
+        <div class="container">
+            <div class="perks">
+                <img src="./images/item.jpg" alt="">
+                <div class="description">
+                    <h4><strong>TRAIN ANYWHERE</strong></h4>
+                    <p>The versatile and adaptable system allows for training nearly anywhere, with a waterproof design, 50-meter range and lights that are visible in nearly any lighting condition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ninth_row d-flex text-center p-5">
+        <div class="container">
+            <div class="perks">
+                <img src="./images/notes.jpg" alt="">
+                <div class="description">
+                    <h4><strong>TRAIN ANYWHERE</strong></h4>
+                    <p>The versatile and adaptable system allows for training nearly anywhere, with a waterproof design, 50-meter range and lights that are visible in nearly any lighting condition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="main-footer">
+        <div class="container" wfd-id="29">
+            <div id="footer-widgets" class="clearfix" wfd-id="30">
+                <div class="footer-widget" wfd-id="43">
+                    <div id="text-2" class="fwidget et_pb_widget widget_text" wfd-id="44">
+                        <div class="textwidget" wfd-id="45">
+                            <p style="color: black;">
+                                <picture class="aligncenter wp-image-42019">
+                                    <source type="image/webp" srcset="./images/fitlight-color-logo.png.webp">
+                                    <img src="./images/fitlight-color-logo.png" alt="" width="256" height="84">
+                                </picture>
+                                FITLIGHT® specializes in designing and manufacturing equipment and platforms applicable in
+                                sports, healthcare and tactical industries. Our team continues to develop innovative
+                                products that are designed to improve human performance.
+                            </p>
+                        </div>
+                    </div> <!-- end .fwidget -->
+                </div> <!-- end .footer-widget -->
+                <div class="footer-widget" wfd-id="39">
+                    <div id="text-3" class="fwidget et_pb_widget widget_text" wfd-id="40">
+                        <h4 class="title">CORPORATE HEADQUARTERS</h4>
+                        <div class="textwidget" wfd-id="41">
+                            <p style="color: black;">FITLIGHT Sports Corp.<br>
+                                14845-6 Yonge St, Suite 376<br>
+                                Aurora, Ontario L4G 6H8<br>
+                                Canada</p>
+                            <p style="color: black;"><b>Phone:</b>&nbsp;+1 905-713-3330</p>
+                            <p style="color: black;"><b>Email:</b> <span style="font-weight: 400;"
+                                    wfd-id="42">info@fitlighttraining.com</span></p>
+                        </div>
+                    </div> <!-- end .fwidget -->
+                </div> <!-- end .footer-widget -->
+                <div class="footer-widget" wfd-id="35">
+                    <div id="text-4" class="fwidget et_pb_widget widget_text" wfd-id="36">
+                        <h4 class="title">US HEADQUARTERS</h4>
+                        <div class="textwidget" wfd-id="37">
+                            <p style="color: black;">FITLIGHT USA Inc.<br>
+                                6815 Biscayne Blvd, Ste 103-462<br>
+                                Miami, FL 33138<br>
+                                USA</p>
+                            <p style="color: black;"><b>Phone:</b>&nbsp;+1 786-650-1107</p>
+                            <p style="color: black;"><b>Email:</b> <span style="font-weight: 400;"
+                                    wfd-id="38">info@fitlighttraining.com</span></p>
+                        </div>
+                    </div> <!-- end .fwidget -->
+                </div> <!-- end .footer-widget -->
+                <div class="footer-widget" wfd-id="31">
+                    <div id="custom_html-2" class="widget_text fwidget et_pb_widget widget_custom_html" wfd-id="32">
+                        <h4 class="title">CONNECT WITH US</h4>
+                        <div class="textwidget custom-html-widget" wfd-id="33">
+                            <div class="first-row" wfd-id="34">
+                                <a class="facebookBtn socBtn" href="https://www.facebook.com/FitlightTraining/">
+                                    <img src="./images/fb.svg" alt=""></a>
+                                <a class="twitterBtn socBtn" href="https://twitter.com/Fitlight">
+                                    <img src="./images/tw.svg" alt=""></a>
+                                <a class="youtubeBtn socBtn" href="https://www.youtube.com/user/FitlightSports/videos">
+                                    <img src="./images/yt.svg" alt=""></a>
+                                <a class="instagramBtn socBtn" href="https://www.instagram.com/fitlighttraining/">
+                                    <img src="./images/ins.svg" alt=""></a>
+                                <a class="linkedinBtn socBtn" href="https://www.linkedin.com/company/fitlight-sports-corp-">
+                                    <img src="./images/in.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!-- end .fwidget -->
+                </div> <!-- end .footer-widget -->
+            </div> <!-- #footer-widgets -->
+        </div> <!-- .container -->
+    
+    
+        <div id="footer-bottom" wfd-id="23">
+            <div class="container clearfix" wfd-id="24">
+                <div id="footer-info" wfd-id="25">
+                    <div wfd-id="26">
+                        <span class="col-lft" wfd-id="28">
+                            © FITLIGHT Corp.® 2012-2020. All Rights Reserved.
+                        </span>
+    
+                        <span class="col-rgt" wfd-id="27">
+    
+                            <a href="https://www.fitlighttraining.com/warranty/"> Warranty </a> |
+                            <a href="https://www.fitlighttraining.com/privacy-policy/">Privacy Policy </a> |
+                            <a href="https://www.fitlighttraining.com/end-user-license-agreement-agreement/"> Terms and
+                                Conditions </a> |
+                            <a href="https://store.fitlighttraining.com/return_policy"> Return Policy </a>
+    
+                        </span>
+                    </div>
+                </div>
+            </div> <!-- .container -->
+        </div>
+    </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script>
+$(document).ready(function () {
+    $("#fitlight-hamburger-btn").click(function () {
+        $(".hambuger-menu-content").addClass("hambuger-menu-content-isActive");
+    });
+    $(".fitlight-hamburger-close").click(function () {
+        $(".hambuger-menu-content").removeClass("hambuger-menu-content-isActive");
+    });
+    $('.slick_slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        arrows: false,
+    });
+
+    // Gets the video src from the data-src on each button
+    $('.close').click(function () {
+        $('#theVideo').get(0).pause();
+    })
+});
+</script>
+
 </html>

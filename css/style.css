@@ -1,8 +1,27 @@
+body {
+	background-color: white;
+}
+.fitlight-buy-button, .fitlight-hamburger, .fitlight-logo {
+	z-index: 2;
+}
+.hero-background {
+    background-image: url(../images/Like_A_Pro_Equipment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 765px) {
+	.hero-background {
+		background-position-x: -130px;
+	}
+}
 #background-image {
-	position: fixed;
-	z-index: -99;
-	width: 100%;
-	height: 100%;
+	padding-bottom: 50px;
+}
+.fitlight-logo {
+    text-align: center;
+}
+.justify-content-right {
+    justify-content: flex-end !important;
 }
 .section-one {
 	height: 100%;
@@ -19,7 +38,7 @@
 	width: 120px;
 }
 section#fitlight-mobile-header {
-	background: #3e3c3c8c;
+	background: #3e3c3c;
 	padding: 10px 0;
 }
 .fitlight-hamburger i {
@@ -31,7 +50,7 @@ section#fitlight-mobile-header {
 	height: 100%;
 	width: 100%;
 	top: 0;
-	z-index: 1;
+	z-index: 909;
 	position: absolute !important;
 	transition: 0.7s;
 }
@@ -73,19 +92,161 @@ ul.fitlight-main-menu {
 	width: 50%;
 	color: white;
 	font-weight: bold;
+	padding: 8px;
 }
 .section-one-title {
 	padding-top: 30px;
 }
 .dark_background_overlay {
 	position: fixed;
-	z-index: 99;
-	width: 1000px;
-	background: #433f3f96;
-	height: 100%;
-	left: -5% !important;
+    width: 100%;
+    background: #0f032e40;;
+    height: 100%;
 }
 .section-one-main-content {
 	position: relative;
-	z-index: 999 !important;
+}
+.second_row {
+	background-image: url(../images/man.jpg); 
+        background-size: 160%;  
+        text-align: center; 
+        max-width:100%; 
+        height: 374px; 
+        background-repeat: no-repeat;
+}
+
+.content {
+	position: relative;
+    padding: 50px 0px;
+}
+.slick_slider{
+	width: 100%;
+}
+.second_row{
+	background-image: url(../images/man.jpg); 
+	background-size: 160%;  
+	text-align: center; 
+	max-width:100%; 
+	height: 374px; 
+	background-repeat: no-repeat;
+}
+.fourth_row{
+	background-color: #fff;
+	position: relative;
+}
+.third_row {
+	background:black; 
+	text-align: center; 
+	max-width:100%; 
+}
+.logos img{
+	width: 100%;
+}
+.sixth_row{
+	background-image: url(../images/man-touch.jpg);
+    background-size: cover;
+}
+.seventh_row {
+    background-image: url(../images/products.jpg);
+    background-size: cover;
+}
+.eigth_row {
+    background-image: url(../images/tools.jpg);
+    background-size: cover;
+}
+.perks img{
+	width: 150px;
+}
+.ninth_row {
+	background-color: white;
+	position: relative;
+}
+.clearing {
+    font-size: large;
+    font-weight: 500;
+}
+#main-footer {
+	padding-top: 50px;
+	position: relative;
+	background-color: white;
+}
+#footer-info {
+    text-align: left;
+    color: #666;
+    padding-bottom: 10px;
+    float: left;
+}
+#main-footer .container {
+    position: relative;
+    width: 90%;
+    max-width: 1161px;
+    margin: auto;
+}
+@media (max-width: 980px) {
+	#footer-info, .et-social-icons {
+		float: none;
+		text-align: center;
+	}
+}
+.col-lft {
+    float: left;
+    color: black;
+    font-weight: 700;
+}
+#footer-bottom {
+    background-color: #1f1f1f;
+    background-color: rgba(0,0,0,.32);
+    padding: 15px 0 5px;
+}
+.col-rgt a {
+    color: black!important;
+	text-decoration: none;
+}
+#footer-info a {
+    font-weight: 700;
+    color: #666;
+}
+.socBtn img {
+    width: 55px;
+}
+#main-footer .footer-widget h4 {
+    color: #3a74b4;
+}
+#footer-widgets .footer-widget:nth-child(n), .footer-widget .fwidget {
+    margin-bottom: 11.5%!important;
+}
+.video-btn {
+    background: #e0e3e7 !important;
+    padding: 18px !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: black !important;
+}
+.arrow-right {
+	width: 25px;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+video {
+	width: 100%;
+}
+.modal-dialog {
+	margin: 30px auto;
+}
+.modal-body {
+  position:relative;
+  padding: 0px !important;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 1px !important;
+    color: black;
+    opacity: 1;
+    border: none;
+    background: white;
 }
