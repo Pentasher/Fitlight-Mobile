@@ -110,7 +110,7 @@ ul.fitlight-main-menu {
         background-repeat: no-repeat;
 }
 
-.second_row_content {
+.content {
 	position: relative;
     padding: 50px 0px;
 }
@@ -127,6 +127,7 @@ ul.fitlight-main-menu {
 }
 .fourth_row{
 	background-color: #fff;
+	position: relative;
 }
 .third_row {
 	background:black; 
