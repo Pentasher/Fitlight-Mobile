@@ -141,3 +141,11 @@ ul.fitlight-main-menu {
 	background-image: url(../images/man-touch.jpg);
     background-size: 100%;
 }
+.seventh_row {
+    background-image: url(../images/products.jpg);
+    background-size: cover;
+}
+.eigth_row {
+    background-image: url(../images/tools.jpg);
+    background-size: cover;
+}
