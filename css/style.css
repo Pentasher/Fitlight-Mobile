@@ -7,10 +7,10 @@ body {
 .hero-background {
     background-image: url(../images/Like_A_Pro_Equipment.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 #background-image {
-    margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 .fitlight-logo {
     text-align: center;
