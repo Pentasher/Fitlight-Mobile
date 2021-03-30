@@ -149,3 +149,6 @@ ul.fitlight-main-menu {
     background-image: url(../images/tools.jpg);
     background-size: cover;
 }
+.perks img{
+	width: 150px;
+}
