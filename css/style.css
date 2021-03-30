@@ -1,8 +1,16 @@
 body {
 	background-color: gray;
 }
+.fitlight-buy-button, .fitlight-hamburger, .fitlight-logo {
+	z-index: 2;
+}
 .hero-background {
-	height: 100vh;
+    background-image: url(../images/Like_A_Pro_Equipment.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#background-image {
+    margin-bottom: 50px;
 }
 .fitlight-logo {
     text-align: center;
@@ -79,14 +87,15 @@ ul.fitlight-main-menu {
 	width: 50%;
 	color: white;
 	font-weight: bold;
+	padding: 8px;
 }
 .section-one-title {
 	padding-top: 30px;
 }
 .dark_background_overlay {
-	position: absolute;
+	position: fixed;
     width: 100%;
-    background: #433f3f96;
+    background: #0f032e40;;
     height: 100%;
 }
 .section-one-main-content {
