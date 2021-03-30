@@ -1,8 +1,8 @@
 #background-image {
-	position: fixed;
-	z-index: -99;
-	width: 100%;
-	height: 100%;
+    position: relative;
+    z-index: -99;
+    width: 100%;
+    height: 443px;
 }
 .section-one {
 	height: 100%;
@@ -78,14 +78,23 @@ ul.fitlight-main-menu {
 	padding-top: 30px;
 }
 .dark_background_overlay {
-	position: fixed;
-	z-index: 99;
-	width: 1000px;
-	background: #433f3f96;
-	height: 100%;
-	left: -5% !important;
+    position: fixed;
+    z-index: 99;
+    width: 1000px;
+    background: #433f3f52;
+    height: 100%;
+    left: -5% !important;
 }
 .section-one-main-content {
 	position: relative;
 	z-index: 999 !important;
+}
+.d-flex{
+	align-items: center;
+}
+.second_row_content {
+    width: 100% !important;
+}
+.second_row_content h1{
+	font-weight: 900 !important;
 }
